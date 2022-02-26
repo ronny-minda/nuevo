@@ -3,7 +3,7 @@
 
 function Footer() {
     return (
-      <footer>
+      <footer id="Footer">
         <section>
             <div className="conte">
                 <div className="sillaLogo"></div>

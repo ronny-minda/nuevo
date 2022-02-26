@@ -4,10 +4,29 @@
   margin: 0;
   padding: 0;
   // overflow-x:hidden;
+  font-family: 'HelveBold';
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'HelveLight';
+  src: url('./Fonts/Neue\ Helvetica\ 49\ Compressed\ Light.ttf')
+}
+@font-face {
+  font-family: 'HelveMedium';
+  src: url('./Fonts/Neue\ Helvetica\ 69\ Compressed\ Medium.ttf')
+}
+@font-face {
+  font-family: 'HelveBold';
+  src: url('./Fonts/Neue\ Helvetica\ 79\ Compressed\ Bold.ttf')
+}
+@font-face {
+  font-family: 'LEAGUE';
+  src: url('./Fonts/JUSTICE\ LEAGUE.ttf')
 }
 
 body {
@@ -22,7 +41,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  width: 100vw;
+  width: 100%;
   height: 22rem;
   display: flex;
   justify-content: center;
@@ -75,9 +94,11 @@ header {
       a {
         text-decoration: none;
         color: #5cc9f4;
-        font-weight: bold;
-        font-size: 3rem;
+        // font-weight: bold;
+        font-size: 4rem;
         transition: 0.5s;
+        // font-size: 'Helve';
+        // font-weight: normal;
       }
 
       a:hover {
@@ -123,7 +144,7 @@ header {
 
     nav {
 
-      width: 100vw;
+      width: 100%;
       transition: 0.5s;
       // opacity: 0.5;
       background-color: #016288;
@@ -149,6 +170,7 @@ header {
         a {
           color: #fff;
           font-size: 2.5rem;
+
         }
       }
     }
@@ -182,11 +204,15 @@ header {
 
 main {
   margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .videoYou {
     // background-color: blue;
     text-align: center;
     height: 65rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,8 +231,10 @@ main {
     background-position: bottom;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: auto;
-    width: 100vw;
+    width: 100%;
+    max-width: 1500px;
     .opaCele {
       height: 100%;
       width: 100%;
@@ -214,10 +242,16 @@ main {
       position: relative;
       span {
         position: absolute;
-        top: 4rem;
-        left: 1rem;
-        font-size: 4vw;
+        top: 3rem;
+        left: 2rem;
+        font-size: 5vw;
         color: #fff;
+      }
+      
+      @media (min-width: 1500px) {
+        span {
+          font-size: 8rem;
+        }
       }
       .decoracion {
         position: relative;
@@ -258,9 +292,10 @@ main {
             object-fit: contain;
           }
           p {
-
+            text-align: center;
             color: #fff;
-            font-size: 1.2rem;
+            font-size: 2rem;
+            font-family: 'HelveLight';
           }
         }
       }
@@ -284,7 +319,7 @@ main {
 // background-color: blue;
         text-align: center;
         height: 65rem;
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -392,7 +427,7 @@ footer {
       background-position: bottom;
       background-size: contain;
       height: 70rem;
-      width: 100vw;
+      width: 100%;
       position: absolute;
       .sillaLogo {
         // background-color: red;
@@ -436,7 +471,7 @@ footer {
             
           }
           span {
-            font-size: 2vw;
+            font-size: 3vw;
             color: #fff;
             margin-left: 1rem;
           }
@@ -461,7 +496,7 @@ footer {
             
           }
           span {
-            font-size: 2vw;
+            font-size: 3vw;
             color: #fff;
             margin-left: 1rem;
           }

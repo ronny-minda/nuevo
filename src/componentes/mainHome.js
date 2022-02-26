@@ -21,7 +21,7 @@ function mainHome() {
             <section className="videoYou">
                 <div></div>
             </section>
-            <section className="lugares">
+            <section id='Lugares' className="lugares">
                 <div className="opaCele">
 
                     <span>LUGARES</span>
@@ -66,7 +66,7 @@ function mainHome() {
 
 
 
-            <section className="lugares huecas">
+            <section id='Huecas' className="lugares huecas">
                 <div className="opaCele">
 
                     <span>HUECAS</span>
@@ -110,7 +110,7 @@ function mainHome() {
 
                 </div>
             </section>
-            <section className="lugares museos">
+            <section id='Museos' className="lugares museos">
                 <div className="opaCele">
 
                     <span>MUSEOS</span>
@@ -162,7 +162,7 @@ function mainHome() {
                 </div>
             </section>
 
-            <section className="lugares huecas">
+            <section id='Historia' className="lugares huecas">
                 <div className="opaCele">
 
                     <span>HISTORIAL</span>

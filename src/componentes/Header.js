@@ -13,7 +13,7 @@ function Header() {
   })
 
   function cambio() {
-    console.log("siiiiii")
+    // console.log("siiiiii")
 
     // const valor = '';
 
@@ -61,40 +61,40 @@ function Header() {
         <div className="botonNav" onClick={cambio} ></div>
 
         <nav className={ stado.menu }>
-          <li className="home">
+          <li onClick={cambio} className="home">
             <Link to="/home">
               <div></div>
             </Link>
           </li>
           
-          <li className="linkA">
-            <Link to="/lugares">
+          <li onClick={cambio} className="linkA">
+            <a href="#Lugares">
               LUGARES
-            </Link>
+            </a>
           </li>
 
-          <li className="linkA">
-            <Link to="/huecas">
+          <li onClick={cambio} className="linkA">
+            <a href="#Huecas">
               HUECAS
-            </Link>
+            </a>
           </li>
 
-          <li className="linkA">
-            <Link to="/museos">
+          <li onClick={cambio} className="linkA">
+            <a href="#Museos">
               MUSEOS
-            </Link>
+            </a>
           </li>
           
-          <li className="linkA">
-            <Link to="/historia">
+          <li onClick={cambio} className="linkA">
+            <a href="#Historia">
               HISTORIA
-            </Link>
+            </a>
           </li>
 
-          <li className="linkA">
-            <Link to="/redes">
+          <li onClick={cambio} className="linkA">
+            <a href="#Footer">
               REDES
-            </Link>
+            </a>
           </li>
         </nav>
       </header>
