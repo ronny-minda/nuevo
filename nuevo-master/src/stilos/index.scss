@@ -36,6 +36,8 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 9999;
   background-color: #5cc9f4;
   background-image: url('../staticos/decoracion1.0.1.svg');
   background-repeat: no-repeat;
@@ -203,6 +205,8 @@ header {
 // ---------------HOME MAIN-----------------------
 
 main {
+  position: relative;
+  z-index: 999;
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
