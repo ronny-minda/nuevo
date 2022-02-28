@@ -1,0 +1,657 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // overflow-x:hidden;
+  font-family: 'HelveBold';
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'HelveLight';
+  src: url('./Fonts/Neue\ Helvetica\ 49\ Compressed\ Light.ttf')
+}
+@font-face {
+  font-family: 'HelveMedium';
+  src: url('./Fonts/Neue\ Helvetica\ 69\ Compressed\ Medium.ttf')
+}
+@font-face {
+  font-family: 'HelveBold';
+  src: url('./Fonts/Neue\ Helvetica\ 79\ Compressed\ Bold.ttf')
+}
+@font-face {
+  font-family: 'LEAGUE';
+  src: url('./Fonts/JUSTICE\ LEAGUE.ttf')
+}
+
+body {
+  // background-color: red;
+  // height: 300vh;
+  
+}
+
+header {
+  background-color: #5cc9f4;
+  background-image: url('../staticos/decoracion1.0.1.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  .logo {
+    height: 20rem;
+    // background-color: red;
+    background-image: url('../staticos/decoracion_silla.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 15rem;
+  }
+
+  .botonNav {
+    display: none;
+  }
+ 
+
+  nav {
+    // background-color: red;
+    position: absolute;
+    top: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: 6rem;
+
+    .home {
+        height: 4rem;
+        width: 4rem;
+        // margin-right: 5rem;
+        
+      a {
+        div {
+          background-image: url('../staticos/home.svg');
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: contain;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    li {
+      list-style: none;
+      
+      a {
+        text-decoration: none;
+        color: #5cc9f4;
+        // font-weight: bold;
+        font-size: 4rem;
+        transition: 0.5s;
+        // font-size: 'Helve';
+        // font-weight: normal;
+      }
+
+      a:hover {
+        color: #1D4E62;
+        transition: 0.5s;
+      }
+
+    }
+
+    .linkA {
+      display: inline;
+    }
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  header {
+    position: fixed;
+    z-index: 99999999;
+
+    .botonNav {
+      display: block;
+      height: 7rem;
+      width: 7rem;
+      // background-color: red;
+      border-radius: 1.5rem;
+      border: solid 0.2rem #000;
+      position: absolute;
+      top: 7rem;
+      right: 0;
+      background-image: url('../staticos/hambur.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      background-position: center;
+      cursor: pointer;
+      
+    }
+
+
+
+    nav {
+
+      width: 100%;
+      transition: 0.5s;
+      // opacity: 0.5;
+      background-color: #016288;
+      // position: static;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      height: calc(100vh - 22rem);
+  
+      .home {
+        padding: 0;
+        // margin: 0;
+        // margin-right: 0rem;
+        // display: flex;
+        
+      }
+      li {
+        border-bottom: solid 0.1rem #fff;
+        width: 90vw;
+        text-align: center;
+        padding: 2rem 0;
+        // margin: 3rem 0;
+        a {
+          color: #fff;
+          font-size: 2.5rem;
+
+        }
+      }
+    }
+
+    .animasi {
+      opacity: 1;
+      transition: 0.5s;
+      height: calc(100vh - 22rem);
+    }
+    .animano {
+      opacity: 0;
+      transition: 0.5s;
+      height: calc(0vh - 22rem);
+    }
+
+    .estasi {
+      display: block;
+    }
+
+    .estano {
+      display: none;
+    }
+
+  }
+
+}
+
+
+
+// ---------------HOME MAIN-----------------------
+
+main {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+  .lugares {
+    background-image: url('../staticos/img/psicologos-guayaquil-default.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+    max-width: 1500px;
+    .opaCele {
+      height: 100%;
+      width: 100%;
+      background-color: #01628899;
+      position: relative;
+      span {
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+        font-size: 5vw;
+        color: #fff;
+      }
+      
+      @media (min-width: 1500px) {
+        span {
+          font-size: 8rem;
+        }
+      }
+      .decoracion {
+        position: relative;
+        top: -4rem;
+        background-image: url('../staticos/decoracion1.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        height: 20rem;
+        width: 100%;
+      }
+      
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        top: -5rem;
+
+        .card {
+          width: 15rem;
+          display: flex;
+          
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 4vw;
+          h3 {
+            
+            text-align: center;
+            color: #fff;
+            font-size: 2.5rem;
+          }
+          img {
+            height: 20rem;
+            width: 15rem;
+            object-fit: contain;
+          }
+          p {
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            font-family: 'HelveLight';
+          }
+        }
+      }
+    }
+  }
+
+  .huecas {
+
+    .opaCele {
+      background-color: #fff;
+      span {
+        color: #47aed9;
+      }
+      .decoracion {
+
+      }
+      .blueDeco {
+        background-image: url('../staticos/decoracion1.0.1.svg');
+      }
+      .videoYo {
+// background-color: blue;
+        text-align: center;
+        height: 65rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      div {
+        background-color: red;
+        height: 90%;
+        width: 90%;
+        box-shadow: 5px 5px 20px 8px #434343;
+        // margin: auto;
+      }
+      }
+      section {
+
+        .card {
+
+          h3 {
+            color: #174285;
+          }
+          img {
+            object-fit: cover;
+          }
+          p {
+            color: #174285;
+          }
+        }
+      }
+    }
+  }
+
+  .museos {
+    background-image: url('../staticos/img/Las-mejores-zonas-donde-alojarse-en-Guayaquil-Ecuador.jpg');
+    .opaCele {
+
+
+      span {
+
+      }
+      .decoracion {
+
+      }
+      .blueDeco {
+
+      }
+      section {
+
+        .card {
+
+          h3 {
+
+          }
+          img {
+            object-fit: cover;
+          }
+          p {
+
+          }
+        }
+      }
+      .aux {
+        display: flex;
+        justify-content: end;
+        .botonVideo {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          width: 30rem;
+          span {
+            
+            position: static;
+            top: 0;
+            left: 0;
+            font-size: 5rem;
+            color: #fff;
+          }
+          div {
+            background-image: url('../staticos/decoracion_Play.svg');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            background-position: center;
+            height: 10rem;
+            width: 10rem;
+          }
+        }
+      }
+      
+    }
+  }
+  .historial {
+    // background-image: none;
+    background-image: url(../staticos/LUUUZ.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    .opaCele {
+      background-color: #fffa;
+
+      span {
+
+      }
+      .decoracion {
+
+      }
+      .blueDeco {
+        // background-color: ;
+      }
+      .videohistoria {
+        // background-color: red;
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        margin-bottom: 5rem;
+        
+
+        .video {
+          // background-color: blue;
+          height: 40rem;
+          width: 50%;
+          box-shadow: 5px 5px 15px 5px #000000;
+          video {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .infoVideo {
+          // background-color: rgb(117, 66, 66);
+          height: 40rem;
+          width: 50%;
+          p {
+            font-size: 3rem;
+            margin: 8rem;
+            text-align: end;
+            
+          }
+          @media (max-width: 900px) {
+            p {
+              font-size: 2rem;
+              margin: 5rem;
+            }
+          }
+          @media (max-width: 550px) {
+            p {
+              font-size: 1.5rem;
+              margin: 2rem;
+            }
+          }
+
+        }
+      }
+      section {
+
+        .card {
+          
+          h3 {
+
+          }
+          img {
+
+          }
+          p {
+
+          }
+        }
+      }
+      .aux {
+
+        .botonVideo {
+
+          span {
+
+          }
+          div {
+
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+
+
+
+// -----------------------FOOOTER-----------------------
+
+// footer {
+//   section {
+//     background-image: url('../staticos/banderas.png');
+//     background-repeat: no-repeat;
+//     background-position: bottom;
+//     background-size: contain;
+    
+//     height: 50rem;
+//     width: 90vw;
+//     .conte {
+//       background-image: url('../staticos/decoracion2.svg');
+//       background-repeat: no-repeat;
+//       background-position: bottom;
+//       background-size: contain;
+//       height: 70rem;
+//       width: 100%;
+//       position: absolute;
+//       .sillaLogo {
+//         // background-color: red;
+//         background-image: url('../staticos/decoracion_silla.svg');
+//         background-repeat: no-repeat;
+//         background-position: bottom;
+//         background-size: contain;
+//         height: 40rem;
+//         width: 15vw;
+//         position: absolute;
+//         right: 2rem;
+//         bottom: 1.5rem;
+//       }
+//       .conteLogos {
+//         // background-color: red;
+//         position: absolute;
+//         bottom: 0;
+//         width: 90vw;
+
+//         height: 23vw;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: flex-start;
+//         .youtu {
+//           // position: absolute;
+//           //   left: 0;
+//           //   bottom: 25rem;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             text-decoration: none;
+  
+//           div {
+//             background-image: url('../staticos/decoracion_you.svg');
+//             background-repeat: no-repeat;
+//             background-position: bottom;
+//             background-size: contain;
+//             height: 8vw;
+//             width: 10vw;
+//             // background-color: red;
+            
+//           }
+//           span {
+//             font-size: 3vw;
+//             color: #fff;
+//             margin-left: 1rem;
+//           }
+//         }
+//         .instagr {
+//           // position: absolute;
+//           //   left: 0;
+//           //   bottom: 10rem;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             text-decoration: none;
+  
+//           div {
+//             background-image: url('../staticos/decoracion_insta.svg');
+//             background-repeat: no-repeat;
+//             background-position: bottom;
+//             background-size: contain;
+//             height: 8vw;
+//             width: 10vw;
+//             // background-color: red;
+            
+//           }
+//           span {
+//             font-size: 3vw;
+//             color: #fff;
+//             margin-left: 1rem;
+//           }
+//         }
+//       }
+      
+//     }
+//   }
+// }
+
+
+
+
+
+footer {
+
+  background-image: url('../staticos/banderas.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  section {
+    background-image: url('../staticos/footer.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    
+    height: 50rem;
+    width: 100%;
+
+    .conte {
+
+      .sillaLogo {
+
+      }
+      .conteLogos {
+
+        .youtu {
+
+          div {
+
+          }
+          span {
+
+          }
+        }
+        .instagr {
+
+  
+          div {
+
+          }
+          span {
+
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  main {
+    margin-top: 0rem;
+    padding-top: 21.5rem;
+  }
+}
