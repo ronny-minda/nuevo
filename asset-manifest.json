@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/nuevo/static/css/main.a1c97d17.css",
-    "main.js": "/nuevo/static/js/main.47a189ea.js",
+    "main.css": "/nuevo/static/css/main.b3909074.css",
+    "main.js": "/nuevo/static/js/main.3be3d11c.js",
+    "static/media/video1.mp4": "/nuevo/static/media/video1.25a08a29a6d2b0c643b1.mp4",
     "static/media/IMG_0626.jpg": "/nuevo/static/media/IMG_0626.d0335b99c53c1c46793e.jpg",
     "static/media/IMG_0672.jpg": "/nuevo/static/media/IMG_0672.32e3a37f57bd3ab31634.jpg",
     "static/media/IMG_0584.jpg": "/nuevo/static/media/IMG_0584.c30143dbbcd57e3fc019.jpg",
@@ -18,25 +19,24 @@
     "static/media/decoracion_silla.svg": "/nuevo/static/media/decoracion_silla.2d52846ab0560f6fc37f.svg",
     "static/media/gastronomia-huecas-de-guayaquil-llulan.jpg": "/nuevo/static/media/gastronomia-huecas-de-guayaquil-llulan.3eefc9c62912dcfb274f.jpg",
     "static/media/decoracion_silla.png": "/nuevo/static/media/decoracion_silla.4bdf4a3ce8ad4776a9ab.png",
+    "static/media/footer.svg": "/nuevo/static/media/footer.bf76c9dca37089b6df6d.svg",
     "static/media/EotpM8jW8AETZkx.jpg": "/nuevo/static/media/EotpM8jW8AETZkx.87764a01f7c2b6ef4664.jpg",
     "static/media/JUSTICE LEAGUE.ttf": "/nuevo/static/media/JUSTICE LEAGUE.05533a909895cab31675.ttf",
-    "static/media/decoracion_insta.svg": "/nuevo/static/media/decoracion_insta.c60e932ceed97e3a41e3.svg",
-    "static/media/decoracion_you.svg": "/nuevo/static/media/decoracion_you.ac488a7576f87ca1c5ec.svg",
     "static/media/decoracion_Play.svg": "/nuevo/static/media/decoracion_Play.47f6e1d49ab4b57e22d5.svg",
     "static/media/home.svg": "/nuevo/static/media/home.e6af4c76b417f2901b90.svg",
     "static/media/Neue Helvetica 79 Compressed Bold.ttf": "/nuevo/static/media/Neue Helvetica 79 Compressed Bold.5c1b70ce7bafa44a094b.ttf",
     "static/media/Neue Helvetica 49 Compressed Light.ttf": "/nuevo/static/media/Neue Helvetica 49 Compressed Light.99f0509f3b3f1ce5a954.ttf",
     "static/media/Neue Helvetica 69 Compressed Medium.ttf": "/nuevo/static/media/Neue Helvetica 69 Compressed Medium.9129e99a7464880d2278.ttf",
     "static/media/decoracion1.0.1.png": "/nuevo/static/media/decoracion1.0.1.208a3a15b8a9acb4c4b4.png",
-    "static/media/decoracion2.svg": "/nuevo/static/media/decoracion2.b8d02b2e6e509f25251c.svg",
     "static/media/decoracion1.0.1.svg": "/nuevo/static/media/decoracion1.0.1.f2bde2aad011a083924e.svg",
     "static/media/decoracion1.svg": "/nuevo/static/media/decoracion1.a60cd3340985a560d653.svg",
+    "static/media/LUUUZ.svg": "/nuevo/static/media/LUUUZ.bd4f1f29fce1fe9bd819.svg",
     "index.html": "/nuevo/index.html",
-    "main.a1c97d17.css.map": "/nuevo/static/css/main.a1c97d17.css.map",
-    "main.47a189ea.js.map": "/nuevo/static/js/main.47a189ea.js.map"
+    "main.b3909074.css.map": "/nuevo/static/css/main.b3909074.css.map",
+    "main.3be3d11c.js.map": "/nuevo/static/js/main.3be3d11c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1c97d17.css",
-    "static/js/main.47a189ea.js"
+    "static/css/main.b3909074.css",
+    "static/js/main.3be3d11c.js"
   ]
 }
